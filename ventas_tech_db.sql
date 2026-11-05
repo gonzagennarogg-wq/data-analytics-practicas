@@ -25,7 +25,7 @@ CREATE TABLE productos (
     id_producto INT PRIMARY KEY,
     id_categoria INT,
     nombre_producto VARCHAR(100) NOT NULL,
-    precio DECIMAL(10,2),
+    precio DECIMAL(10,2) NOT NULL,
     stock INT DEFAULT 0,
     activo BIT DEFAULT 1,
     --Se define la conexion
